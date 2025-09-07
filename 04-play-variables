@@ -1,0 +1,11 @@
+- name: play l;evel variables
+  hosts: frontend
+  become: yes
+  vars:
+    course: devops
+    name: monnish
+  tasks:
+  - name: printing the course information
+    ansible.builtin.debug:
+      msg: "hello course is {{course}}, and ytrainer is {{trainer}}"
+  
