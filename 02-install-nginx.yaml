@@ -1,0 +1,8 @@
+- name: install nginx on frontend
+  hosts: frontend
+  become: yes
+  #connection: local
+  tasks:
+  - name: install nginx on frontend
+    ansible.builtin.dnf:
+    
