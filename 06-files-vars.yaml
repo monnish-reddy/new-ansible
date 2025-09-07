@@ -1,0 +1,10 @@
+- name: file variables
+  hosts: frontend
+ 
+  become: yes
+  vars_files:
+  - course.yaml
+  tasks:
+  - name: files form vars
+    ansible.builtin.debug:
+      msg: "hello my name is {{name}}"

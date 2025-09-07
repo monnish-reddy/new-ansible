@@ -8,4 +8,9 @@
   - name: printing the course information
     ansible.builtin.debug:
       msg: "hello course is {{course}}, and ytrainer is {{name}}"
+
+      
+  - name: printing the course information
+    ansible.builtin.debug:
+      msg: "hello course is {{course}}, and ytrainer is {{name}}"
   
